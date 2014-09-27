@@ -1,1 +1,18 @@
 <h1>Add New Posts</h1>
+<%= form_for @post do |f| %>
+  <p>
+    <%= f.label :title %> 
+    <%= f.text_field :title %> 
+  </p>
+  <p>
+    <%= f.label :body %> 
+    <%= f.text_area :body %> 
+  </p>
+  <p>
+    <%= f.select :category_id Category.all %> 
+  </p>
+  <p>
+    <%= f.label :title %> 
+    <%= f.text_field :title %> 
+  </p>
+<% end %>
